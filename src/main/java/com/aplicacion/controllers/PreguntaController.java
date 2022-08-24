@@ -85,7 +85,7 @@ public class PreguntaController {
 		throw new ResponseStatusException(HttpStatus.NOT_FOUND, "El Proyecto no existe");
 	}
 
-	// EDITAR PREGUNTA
+	// EDITAR PREGUNTAS
 	@PutMapping("/preguntas/editar/")
 	@ResponseStatus(code = HttpStatus.OK)
 	public Boolean editarPreguntas(@RequestBody @Validated Preguntas pregunta) throws Exception {
